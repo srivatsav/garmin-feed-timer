@@ -1,0 +1,9 @@
+{
+  "name": "garmin-feeds-backend",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node test/format.test.mjs",
+    "deploy": "wrangler deploy"
+  }
+}

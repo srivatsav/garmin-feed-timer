@@ -1,0 +1,32 @@
+# --- secrets: never commit ---
+# generated at build time, contains the API token
+watch/source-private/
+*.der
+*.pem
+*.key
+.env
+.env.*
+.dev.vars
+*token*
+*.secret
+
+# --- Cloudflare / wrangler local state (account ids, caches) ---
+backend/wrangler.toml
+.wrangler/
+**/.wrangler/
+
+# --- build output ---
+watch/out/
+watch/bin/
+*.prg
+*.prg.debug.xml
+*.iq
+**/gen/
+**/internal-mir/
+**/external-mir/
+
+# --- tooling ---
+node_modules/
+.DS_Store
+*.log
+.vscode/

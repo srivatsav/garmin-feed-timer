@@ -1,0 +1,16 @@
+name = "garmin-feeds"
+main = "src/index.js"
+compatibility_date = "2026-11-01"
+preview_urls = false
+
+# Copy this file to wrangler.toml (gitignored) and fill in your values.
+[vars]
+TZ = "Europe/London"            # IANA time zone the feeds are written in
+NARA_PROFILE_NAME = "Baby"      # baby's name as it should appear in the import
+NARA_CAREGIVER = "Parent"
+NARA_SEX = ""                   # FEMALE / MALE, or leave empty
+
+[[d1_databases]]
+binding = "DB"
+database_name = "garmin-feeds"
+database_id = "<your D1 database id: wrangler d1 create garmin-feeds>"
